@@ -1,6 +1,10 @@
 import matplotlib.pyplot as plt
 from lifelines import KaplanMeierFitter
 import yaml
+import pandas as pd
+
+df = pd.read_csv('/home/fhebal/data/data_file.csv')
+
 
 def read_config(config_path):
     with open(config_path, 'r') as stream:
